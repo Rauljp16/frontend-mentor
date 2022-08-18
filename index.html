@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="card.js" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>credit card</title>
+  </head>
+  <body>
+    <section class="datos">
+      <form>
+        <label class="label" for="cardholder_name">CARDHOLDER NAME</label><br />
+        <input
+          class="input"
+          type="text"
+          id="cardholder_name"
+          name="cardholder_name"
+          placeholder="ej. Raul Jerez"
+        /><br />
+
+        <label class="label" for="card_number">CARD NUMBER</label><br />
+        <input
+          class="input"
+          inputmode="numeric"
+          id="card_number"
+          name="card_number"
+          placeholder="ej.1234 1234 1234 1234"
+        /><br />
+        <button>confirm</button>
+      </form>
+    </section>
+    <section class="front-card">
+      <img src="images/bg-card-front.png" />
+      <input
+        class="card_number"
+        inputmode="numeric"
+        name="card_number"
+        placeholder="0000 0000 0000 0000"
+      />
+      <input
+        class="cardholder_name"
+        type="text"
+        name="cardholder_name"
+        placeholder="Raul Jerez"
+      />
+    </section>
+    <section class="back-card">
+      <img src="images/bg-card-back.png" />
+      <input class="cvc" inputmode="numeric" name="cvc" placeholder="000" />
+    </section>
+  </body>
+</html>
