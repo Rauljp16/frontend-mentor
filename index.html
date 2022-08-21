@@ -34,9 +34,38 @@
           name="card_number"
           placeholder="ej.1234 1234 1234 1234"
         /><br />
+        <article class="label-exp-date-cvc">
+          <label class="label-date" for="exp. date">EXP. DATE (MM/YY)</label>
+          <label class="label-date-cvc" for="cvc"> CVC</label><br />
+        </article>
+
+        <article class="article-input">
+          <input
+            class="input"
+            inputmode="numeric"
+            id="input-mm"
+            name="input-mm"
+            placeholder="MM"
+          />
+          <input
+            class="input"
+            inputmode="numeric"
+            id="input-yy"
+            name="input-yy"
+            placeholder="YY"
+          />
+          <input
+            class="input"
+            inputmode="numeric"
+            id="input-cvc"
+            name="input-cvc"
+            placeholder="ej 123"
+          />
+        </article>
         <button>confirm</button>
       </form>
     </section>
+
     <section class="front-card">
       <img src="images/bg-card-front.png" />
       <input
@@ -51,6 +80,18 @@
         name="cardholder_name"
         placeholder="Raul Jerez"
       />
+      <svg
+        width="84"
+        height="47"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" />
+        <path
+          d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
+          stroke="#fff"
+        />
+      </svg>
     </section>
     <section class="back-card">
       <img src="images/bg-card-back.png" />

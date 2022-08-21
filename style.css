@@ -4,15 +4,12 @@ body {
   background-image: url(images/bg-main-desktop.png);
   background-repeat: no-repeat;
   width: 1440px;
-  /* height: 600px; */
-  /* width: 300px; */
 }
 
 .datos {
   position: relative;
-  left: 60%;
+  left: 65%;
   top: 270px;
-  /* background-color: rgb(202, 193, 193); */
   height: 300px;
   width: 250px;
   display: flex;
@@ -21,30 +18,114 @@ body {
   align-items: center;
   align-content: space-around;
 }
+.label-date {
+  margin-top: 8px;
+  font-size: 10px;
+  padding: 1px;
+}
+.label-date-cvc {
+  margin-top: 8px;
+  font-size: 10px;
+  padding: 1px;
+  margin-left: 25px;
+}
+.article-input {
+  display: flex;
+  gap: 7px;
+}
+
+#input-cvc {
+  margin-right: 7px;
+  padding: 5px;
+}
+
+.article-input input {
+  text-align: center;
+  padding: 5px;
+}
 
 .label {
   font-size: 10px;
+  padding: 1px;
 }
 
 .input {
   width: 95%;
   height: 8%;
-  border-radius: 5px;
+  border: solid 0.1px;
+  border-radius: 6px;
+  border-color: rgb(184, 175, 175);
   cursor: pointer;
 }
 
 form {
-  /* background-color: grey; */
   width: calc(100%);
   height: calc(100%);
 }
+
 button {
-  width: 95%;
-  height: 9%;
+  width: 97%;
+  height: 10%;
   background-image: url(images/bg-main-desktop.png);
   color: white;
-  border-radius: 5px;
+  border-radius: 6px;
   text-align: center;
   margin-top: 15px;
   cursor: pointer;
+}
+
+.front-card {
+  position: absolute;
+  bottom: 51%;
+}
+.front-card img {
+  margin-left: 140px;
+}
+.front-card svg {
+  position: relative;
+  right: 70%;
+  bottom: 165px;
+}
+.card_number {
+  font-size: 23px;
+  top: 145px;
+  position: absolute;
+  right: 345px;
+  border: 0px;
+  color: white;
+  background: none;
+}
+.card_number::placeholder {
+  color: white;
+  letter-spacing: 3px;
+}
+.cardholder_name {
+  position: relative;
+  bottom: 23px;
+  border: none;
+  right: 420px;
+  background: none;
+}
+.cardholder_name::placeholder {
+  color: white;
+  letter-spacing: 3px;
+}
+
+.back-card {
+  position: absolute;
+  top: 51%;
+}
+.back-card img {
+  margin-left: 240px;
+}
+.cvc {
+  position: relative;
+  bottom: 118px;
+  right: 100px;
+  border: none;
+  background: none;
+}
+.cvc::placeholder {
+  color: white;
+  letter-spacing: 3px;
 }
