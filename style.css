@@ -1,22 +1,28 @@
 body {
+  width: 1440px;
   font-size: 18px;
   font-family: Space Grotesk;
-  background-image: url(images/bg-main-desktop.png);
+  background-image:  url(images/bg-main-desktop.png);
   background-repeat: no-repeat;
-  width: 1440px;
+ 
 }
 
 .datos {
   position: relative;
   left: 65%;
   top: 270px;
-  height: 300px;
+  height: 400px;
   width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   align-content: space-around;
+}
+.datos input{
+  text-indent: 3%;
+  margin-bottom: 18px;
+  
 }
 .label-date {
   margin-top: 8px;
@@ -27,19 +33,17 @@ body {
   margin-top: 8px;
   font-size: 10px;
   padding: 1px;
-  margin-left: 25px;
+  margin-left: 103px;
 }
 .article-input {
   display: flex;
   gap: 7px;
+  margin-right: 7px;
 }
 
-#input-cvc {
-  margin-right: 7px;
-  padding: 5px;
-}
 
 .article-input input {
+  height: 25px;
   text-align: center;
   padding: 5px;
 }
@@ -57,13 +61,40 @@ body {
   border-color: rgb(184, 175, 175);
   cursor: pointer;
 }
+#input-mm{
+  width: 30%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#input-yy{
+  width: 30%;
+  margin-right: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#input-cvc{
+  width: 70%;
+  margin-right: 7px;
+  padding: 5px;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
 
 form {
-  width: calc(100%);
-  height: calc(100%);
+  position: relative;
+  width: 400px;
+  height: 600px;
+  margin-left: 160%;
+   /* width: calc(100%); 
+  height: calc(100%);  */
+  
 }
 
 button {
+  font-size: 18px;
   width: 97%;
   height: 10%;
   background-image: url(images/bg-main-desktop.png);
@@ -72,6 +103,7 @@ button {
   text-align: center;
   margin-top: 15px;
   cursor: pointer;
+  letter-spacing: 1px;
 }
 
 .front-card {
