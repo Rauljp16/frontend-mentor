@@ -2,9 +2,8 @@ body {
   width: 1440px;
   font-size: 18px;
   font-family: Space Grotesk;
-  background-image:  url(images/bg-main-desktop.png);
+  background-image: url(images/bg-main-desktop.png);
   background-repeat: no-repeat;
- 
 }
 
 .datos {
@@ -19,10 +18,9 @@ body {
   align-items: center;
   align-content: space-around;
 }
-.datos input{
+.datos input {
   text-indent: 3%;
   margin-bottom: 18px;
-  
 }
 .label-date {
   margin-top: 8px;
@@ -40,7 +38,6 @@ body {
   gap: 7px;
   margin-right: 7px;
 }
-
 
 .article-input input {
   height: 25px;
@@ -61,20 +58,20 @@ body {
   border-color: rgb(184, 175, 175);
   cursor: pointer;
 }
-#input-mm{
+#input-mm {
   width: 30%;
   text-align: center;
   letter-spacing: 2px;
 }
 
-#input-yy{
+#input-yy {
   width: 30%;
   margin-right: 10px;
   text-align: center;
   letter-spacing: 2px;
 }
 
-#input-cvc{
+#input-cvc {
   width: 70%;
   margin-right: 7px;
   padding: 5px;
@@ -82,15 +79,13 @@ body {
   letter-spacing: 2px;
 }
 
-
 form {
   position: relative;
   width: 400px;
   height: 600px;
-  margin-left: 160%;
-   /* width: calc(100%); 
+  margin-left: 40%;
+  /* width: calc(100%); 
   height: calc(100%);  */
-  
 }
 
 button {
