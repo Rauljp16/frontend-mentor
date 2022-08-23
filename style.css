@@ -78,6 +78,23 @@ body {
   text-align: left;
   letter-spacing: 2px;
 }
+.mm-yy{
+  position: absolute;
+  left: 58%;
+  bottom: 10%;
+display: flex;
+}
+#mm-yy::placeholder{
+color: white;
+}
+#mm-yy {
+  color: white;
+  border: none;
+  background: none;
+  width: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+}
 
 form {
   position: relative;
@@ -117,16 +134,19 @@ button {
   font-size: 23px;
   top: 145px;
   position: absolute;
-  right: 345px;
-  border: 0px;
+  right: 296px;
+  border: none;
   color: white;
   background: none;
+  width: 45%;
 }
 .card_number::placeholder {
   color: white;
-  letter-spacing: 3px;
+  letter-spacing: 6px;
+  text-align: center;
 }
 .cardholder_name {
+  color: white;
   position: relative;
   bottom: 23px;
   border: none;
