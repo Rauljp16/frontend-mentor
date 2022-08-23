@@ -32,6 +32,7 @@
           id="card_number"
           name="card_number"
           placeholder="ej.1234 1234 1234 1234"
+          maxlength="16"
         /><br />
         <article class="label-exp-date-cvc">
           <label class="label-date" for="exp. date">EXP. DATE (MM/YY)</label>
@@ -45,6 +46,7 @@
             id="input-mm"
             name="input-mm"
             placeholder="MM"
+            maxlength="2"
           />
           <input
             class="input"
@@ -52,6 +54,7 @@
             id="input-yy"
             name="input-yy"
             placeholder="YY"
+            maxlength="2"
           />
           <input
             class="input"
@@ -59,9 +62,10 @@
             id="input-cvc"
             name="input-cvc"
             placeholder="ej. 123"
+            maxlength="3"
           />
         </article>
-        <button>Confirm</button>
+        <button type="button" onclick="confirm">Confirm</button>
       </form>
     </section>
 
@@ -72,17 +76,19 @@
         inputmode="numeric"
         name="card_number"
         placeholder="0000 0000 0000 0000"
+        disabled
       />
       <input
         class="cardholder_name"
         type="text"
         name="cardholder_name"
-        placeholder="Raul Jerez"
+        placeholder="RAUL JEREZ"
+        disabled
       />
       <article class="mm-yy">
-        <input type="numeric" id="mm-yy" placeholder="00" />
-        <input type="text" id="mm-yy" placeholder="/" />
-        <input type="numeric" id="mm-yy" placeholder="00" />
+        <input type="numeric" id="mm-yy" placeholder="00" disabled />
+        <input type="text" id="mm-yy" placeholder="/" disabled />
+        <input type="numeric" id="mm-yy" placeholder="00" disabled />
       </article>
       <svg
         width="84"
@@ -99,7 +105,13 @@
     </section>
     <section class="back-card">
       <img src="images/bg-card-back.png" />
-      <input class="cvc" inputmode="numeric" name="cvc" placeholder="000" />
+      <input
+        class="cvc"
+        inputmode="numeric"
+        name="cvc"
+        placeholder="000"
+        disabled
+      />
     </section>
 
     <link rel="stylesheet" href="card.js" />
