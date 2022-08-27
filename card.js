@@ -1,10 +1,7 @@
-function numeroTarjeta() {
-    let inputName = document.getElementById("cardholder_name");
+const parrafo = document.querySelector("p");
+const cardholder_name = document.getElementById("cardholder_name");
 
-    let name = cardholder_name.value;
-    console.log(name);
-}
-// numeroTarjeta();
-// function prueba() {
-//   let prueba = 2;
-// }
+cardholder_name.addEventListener("change", (e) => {
+  console.log(e);
+  //   parrafo.texContent = e.target.value;
+});
