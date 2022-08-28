@@ -1,7 +1,8 @@
-const parrafo = document.querySelector("p");
-const cardholder_name = document.getElementById("cardholder_name");
 
-cardholder_name.addEventListener("change", (e) => {
-  console.log(e);
-  //   parrafo.texContent = e.target.value;
-});
+
+let cardholder_name = document.getElementById("text");
+
+text.addEventListener("keyup", (event) => {
+    let inputText = event.path[0].value;
+    document.querySelector(".toUpper").innerHTML = inputText.toUpperCase();
+})

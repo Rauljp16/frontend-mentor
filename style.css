@@ -78,14 +78,14 @@ body {
   text-align: left;
   letter-spacing: 2px;
 }
-.mm-yy{
+.mm-yy {
   position: absolute;
   left: 58%;
   bottom: 10%;
-display: flex;
+  display: flex;
 }
-#mm-yy::placeholder{
-color: white;
+#mm-yy::placeholder {
+  color: white;
 }
 #mm-yy {
   color: white;
@@ -175,6 +175,11 @@ button {
 .cvc::placeholder {
   color: white;
   letter-spacing: 3px;
+}
+
+.prueba {
+  position: absolute;
+  top: 80%;
 }
 p {
   color: white;
