@@ -14,6 +14,7 @@
     <title>credit card</title>
   </head>
   <body>
+    <!-- <img id="img_fondo" src="images/bg-main-desktop.png" /> -->
     <section class="datos">
       <form>
         <label class="label" for="cardholder_name">CARDHOLDER NAME</label><br />
@@ -43,53 +44,58 @@
           <input
             class="input"
             inputmode="numeric"
-            id="input-mm"
-            name="input-mm"
+            id="input_mm"
+            name="input_mm"
             placeholder="MM"
             maxlength="2"
           />
           <input
             class="input"
             inputmode="numeric"
-            id="input-yy"
-            name="input-yy"
+            id="input_yy"
+            name="input_yy"
             placeholder="YY"
             maxlength="2"
           />
           <input
             class="input"
             inputmode="numeric"
-            id="input-cvc"
-            name="input-cvc"
+            id="input_cvc"
+            name="input_cvc"
             placeholder="ej. 123"
             maxlength="3"
           />
         </article>
-        <button id="numeroTarjeta" href="" type="button">Confirm</button>
+        <button id="button" type="submit">Confirm</button>
       </form>
     </section>
 
     <section class="front-card">
       <img src="images/bg-card-front.png" />
-      <input
+      <!-- <input
         class="card_number"
         inputmode="numeric"
         name="card_number"
         placeholder="0000 0000 0000 0000"
         disabled
-      />
-      <input
+      /> -->
+      <p class="card_number">0000 0000 0000 0000</p>
+      <!-- <input
         id="textName"
         class="cardholder_name"
         type="text"
         name="cardholder_name"
         placeholder="RAUL JEREZ"
         disabled
-      />
+      /> -->
+      <p class="card_name">RAUL JEREZ</p>
       <article class="mm-yy">
-        <input type="numeric" id="mm-yy" placeholder="00" disabled />
-        <input type="text" id="mm-yy" placeholder="/" disabled />
-        <input type="numeric" id="mm-yy" placeholder="00" disabled />
+        <!-- <input type="numeric" id="mm" placeholder="00" disabled /> -->
+        <p class="mm">00</p>
+        <!-- <input type="text" id="/" placeholder="/" disabled /> -->
+        <p class="/">/</p>
+        <!-- <input type="numeric" id="yy" placeholder="00" disabled /> -->
+        <p class="yy">00</p>
       </article>
       <svg
         width="84"
@@ -106,18 +112,16 @@
     </section>
     <section class="back-card">
       <img src="images/bg-card-back.png" />
-      <input
+      <!-- <input
         class="cvc"
         inputmode="numeric"
         name="cvc"
         placeholder="000"
         disabled
-      />
+      /> -->
+      <p class="cvc">000</p>
     </section>
-    <section class="prueba">
-      <input type="text" id="text" />
-      <p class="toUpper"></p>
-    </section>
+
     <script src="card.js"></script>
   </body>
 </html>

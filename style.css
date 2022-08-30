@@ -2,8 +2,8 @@ body {
   width: 1440px;
   font-size: 18px;
   font-family: Space Grotesk;
-  background-image: url(images/bg-main-desktop.png);
   background-repeat: no-repeat;
+  background-image: url(images/bg-main-desktop.png);
 }
 
 .datos {
@@ -127,12 +127,12 @@ button {
 }
 .front-card svg {
   position: relative;
-  right: 70%;
+  left: 70%;
   bottom: 165px;
 }
 .card_number {
   font-size: 23px;
-  top: 145px;
+  top: 125px;
   position: absolute;
   right: 296px;
   border: none;
@@ -168,7 +168,7 @@ button {
 .cvc {
   position: relative;
   bottom: 118px;
-  right: 100px;
+  left: 100px;
   border: none;
   background: none;
 }
