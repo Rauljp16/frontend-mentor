@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   width: 1440px;
   font-size: 18px;
@@ -21,6 +27,12 @@ body {
 .datos input {
   text-indent: 3%;
   margin-bottom: 18px;
+}
+#error{
+  margin-top: 8px;
+  font-size: 10px;
+  padding: 1px;
+  visibility: hidden;
 }
 .label-date {
   margin-top: 8px;

@@ -16,7 +16,7 @@
   <body>
     <!-- <img id="img_fondo" src="images/bg-main-desktop.png" /> -->
     <section class="datos">
-      <form>
+      <form id="form">
         <label class="label" for="cardholder_name">CARDHOLDER NAME</label><br />
         <input
           class="input"
@@ -25,6 +25,7 @@
           name="cardholder_name"
           placeholder="ej. Raul Jerez"
         /><br />
+        <p id="error">wrong format letters only</p>
 
         <label class="label" for="card_number">CARD NUMBER</label><br />
         <input
