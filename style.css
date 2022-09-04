@@ -81,6 +81,13 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
+.input_name{
+  width: 95%;
+  height: 8%;
+  border: solid 0.1px;
+  border-radius: 6px;
+  cursor: pointer;
+}
 #input-mm {
   width: 30%;
   text-align: center;
@@ -207,4 +214,8 @@ p {
 }
 
 #cardholder_name {
+}
+
+.border_red{
+  border-color: red;
 }
