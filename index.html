@@ -24,18 +24,21 @@
           id="cardholder_name"
           name="cardholder_name"
           placeholder="ej. Raul Jerez"
+          maxlength="30"
         /><br />
         <p id="error">wrong format letters only</p>
 
         <label class="label" for="card_number">CARD NUMBER</label><br />
         <input
           class="input"
-          inputmode="numeric"
+          type="text"
           id="card_number"
           name="card_number"
           placeholder="ej.1234 1234 1234 1234"
           maxlength="16"
         /><br />
+        <p id="error_number">wrong format number only</p>
+
         <article class="label-exp-date-cvc">
           <label class="label-date" for="exp. date">EXP. DATE (MM/YY)</label>
           <label class="label-date-cvc" for="cvc"> CVC</label><br />
