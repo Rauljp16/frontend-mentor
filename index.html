@@ -30,7 +30,7 @@
 
         <label class="label" for="card_number">CARD NUMBER</label><br />
         <input
-          class="input"
+          class="input_number"
           type="text"
           id="card_number"
           name="card_number"
@@ -46,29 +46,34 @@
 
         <article class="article-input">
           <input
-            class="input"
-            inputmode="numeric"
+            class="inputMM"
+            type="text"
             id="input_mm"
             name="input_mm"
             placeholder="MM"
             maxlength="2"
           />
           <input
-            class="input"
-            inputmode="numeric"
+            class="inputYY"
+            type="text"
             id="input_yy"
             name="input_yy"
             placeholder="YY"
             maxlength="2"
           />
           <input
-            class="input"
+            class="inputCVC"
             inputmode="numeric"
             id="input_cvc"
             name="input_cvc"
             placeholder="ej. 123"
             maxlength="3"
           />
+        </article>
+        <article class="article-error">
+          <p id="error_mm">can't be blank</p>
+          <p id="error_yy">can't be blank</p>
+          <p id="error_cvc">can't be blank</p>
         </article>
         <button id="button" type="submit">Confirm</button>
       </form>

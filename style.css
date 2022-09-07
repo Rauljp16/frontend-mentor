@@ -45,6 +45,21 @@ body {
   color: red;
   visibility: hidden;
 }
+#error_mm {
+  color: red;
+  font-size: 10px;
+  visibility: hidden;
+}
+#error_yy {
+  color: red;
+  font-size: 10px;
+  visibility: hidden;
+}
+#error_cvc {
+  color: red;
+  font-size: 10px;
+  visibility: hidden;
+}
 
 .label-date {
   margin-top: 8px;
@@ -55,7 +70,7 @@ body {
   margin-top: 8px;
   font-size: 10px;
   padding: 1px;
-  margin-left: 103px;
+  margin-left: 175px;
 }
 .article-input {
   display: flex;
@@ -67,6 +82,13 @@ body {
   height: 25px;
   text-align: center;
   padding: 5px;
+}
+.article-error {
+  position: relative;
+  display: flex;
+  gap: 84px;
+  margin-right: 7px;
+  bottom: 13px;
 }
 
 .label {
@@ -81,33 +103,42 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
-.input_name{
+.input_name {
   width: 95%;
   height: 8%;
   border: solid 0.1px;
   border-radius: 6px;
   cursor: pointer;
 }
-#input-mm {
-  width: 30%;
-  text-align: center;
-  letter-spacing: 2px;
+.input_number {
+  width: 95%;
+  height: 8%;
+  border: solid 0.1px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.inputMM {
+  width: 95%;
+  height: 8%;
+  border: solid 0.1px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.inputYY {
+  width: 95%;
+  height: 8%;
+  border: solid 0.1px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.inputCVC {
+  width: 95%;
+  height: 8%;
+  border: solid 0.1px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-#input-yy {
-  width: 30%;
-  margin-right: 10px;
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-#input-cvc {
-  width: 70%;
-  margin-right: 7px;
-  padding: 5px;
-  text-align: left;
-  letter-spacing: 2px;
-}
 .mm-yy {
   position: absolute;
   left: 58%;
@@ -133,8 +164,6 @@ form {
   width: 400px;
   height: 600px;
   margin-left: 40%;
-  /* width: calc(100%); 
-  height: calc(100%);  */
 }
 
 button {
@@ -214,8 +243,4 @@ p {
 }
 
 #cardholder_name {
-}
-
-.border_red{
-  border-color: red;
 }
