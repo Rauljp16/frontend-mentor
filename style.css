@@ -164,6 +164,7 @@ form {
   width: 400px;
   height: 600px;
   margin-left: 40%;
+  visibility: visible;
 }
 
 button {
@@ -242,5 +243,42 @@ p {
   color: white;
 }
 
-#cardholder_name {
+#menFinal{
+  position: absolute;
+  background-color: rgb(143, 49, 180);
+  width: 150%;
+  height: 125%;
+  left: 1%;
+  bottom: 1%;
+  visibility: hidden;
+  
 }
+
+#menFinal button{
+  position: relative;
+  margin: 10px;
+  margin-top: 50%;
+  cursor: pointer;
+}
+
+#menFinal p{
+  position: relative;
+  top: 26%;
+  left: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5%;
+  color: black;
+}
+
+#THANK{
+  font-size: 30px;
+}
+#menFinal svg{
+  position: relative;
+  left: 40%;
+  top: 20%;
+}
+
