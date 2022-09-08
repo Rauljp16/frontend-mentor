@@ -20,6 +20,8 @@ let input_Cmm = document.querySelector(".inputMM");
 let input_Cyy = document.querySelector(".inputYY");
 let input_Ccvc = document.querySelector(".inputCVC");
 
+let form = document.getElementById("form");
+
 ///////numero de tarjrta
 
 card_number.addEventListener("keyup", (event) => {
@@ -145,15 +147,18 @@ function validate_cvc(input_cvc) {
 }
 
 ////ocultar form///////
-let form = document.getElementById("form");
 
 button.addEventListener("click", (event) => {
   event.preventDefault();
   ocultarForm();
 });
 
-function ocultarForm() {
-  if (input_cvc.value == true) {
+function ocultarForm(form) {
+  if (form == true) {
     console.log("prueba");
+  } else {
+    console.log("prueba nula");
+
   }
 }
+/////prueba
