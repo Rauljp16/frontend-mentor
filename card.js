@@ -70,7 +70,6 @@ function validate(cardholder_name) {
   } else {
     input_name.style.border = "1px solid red";
     error.style.visibility = "visible";
-
   }
 }
 
@@ -146,3 +145,15 @@ function validate_cvc(input_cvc) {
 }
 
 ////ocultar form///////
+let form = document.getElementById("form");
+
+button.addEventListener("click", (event) => {
+  event.preventDefault();
+  ocultarForm();
+});
+
+function ocultarForm() {
+  if (input_cvc.value == true) {
+    console.log("prueba");
+  }
+}

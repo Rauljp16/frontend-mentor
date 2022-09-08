@@ -75,7 +75,7 @@ body {
 .article-input {
   display: flex;
   gap: 7px;
-  margin-right: 7px;
+  margin-right: 15px;
 }
 
 .article-input input {
@@ -104,14 +104,14 @@ body {
   cursor: pointer;
 }
 .input_name {
-  width: 95%;
+  width: 96%;
   height: 8%;
   border: solid 0.1px;
   border-radius: 6px;
   cursor: pointer;
 }
 .input_number {
-  width: 95%;
+  width: 96%;
   height: 8%;
   border: solid 0.1px;
   border-radius: 6px;
