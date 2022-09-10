@@ -24,40 +24,47 @@ let form = document.getElementById("form");
 
 ///////numero de tarjrta
 
-card_number.addEventListener("keyup", (event) => {
+card_number.addEventListener("change", (event) => {
   let inputText = event.path[0].value;
   document.querySelector(".card_number").innerHTML = inputText.toUpperCase();
 });
 
 ////// nombre de tarjeta
 
-cardholder_name.addEventListener("keyup", (event) => {
+cardholder_name.addEventListener("change", (event) => {
   let inputText = event.path[0].value;
   document.querySelector(".card_name").innerHTML = inputText.toUpperCase();
 });
 
 ////// fecha de caducidad mm
 
-input_mm.addEventListener("keyup", (event) => {
+input_mm.addEventListener("change", (event) => {
   let inputText = event.path[0].value;
   document.querySelector(".mm").innerHTML = inputText;
 });
 
 ////// fecha de caducidad yy
 
-input_yy.addEventListener("keyup", (event) => {
+input_yy.addEventListener("change", (event) => {
   let inputText = event.path[0].value;
   document.querySelector(".yy").innerHTML = inputText;
 });
 
 ////// codigo cvc
 
-input_cvc.addEventListener("keyup", (event) => {
+input_cvc.addEventListener("change", (event) => {
   let inputText = event.path[0].value;
   document.querySelector(".cvc").innerHTML = inputText;
 });
-
-//// confirm name
+/// confirmar formulario ///
+const formValid = {
+  cardholder_number: false,
+  cardholder_name: false,
+  input_mm: false,
+  input_yy: false,
+  input_cvc: false,
+};
+/// confirm name///
 
 button.addEventListener("click", (event) => {
   event.preventDefault();
@@ -69,9 +76,13 @@ function validate(cardholder_name) {
   if (exp_reg.test(cardholder_name) == true) {
     input_name.style.border = "1px solid black";
     error.style.visibility = "hidden";
+    formValid.cardholder_name = true;
+    console.table(formValid);
   } else {
     input_name.style.border = "1px solid red";
     error.style.visibility = "visible";
+    formValid.cardholder_name = false;
+    console.table(formValid);
   }
 }
 
