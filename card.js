@@ -145,20 +145,3 @@ function validate_cvc(input_cvc) {
     error_cvc.style.visibility = "visible";
   }
 }
-
-////ocultar form///////
-
-button.addEventListener("click", (event) => {
-  event.preventDefault();
-  ocultarForm();
-});
-
-function ocultarForm(form) {
-  if (form == true) {
-    console.log("prueba");
-  } else {
-    console.log("prueba nula");
-
-  }
-}
-/////prueba
