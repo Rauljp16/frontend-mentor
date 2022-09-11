@@ -243,25 +243,23 @@ p {
   color: white;
 }
 
-#menFinal{
+#menFinal {
   position: absolute;
-  background-color: rgb(143, 49, 180);
   width: 150%;
   height: 125%;
   left: 1%;
   bottom: 1%;
   visibility: hidden;
-  
 }
 
-#menFinal button{
+#menFinal button {
   position: relative;
   margin: 10px;
   margin-top: 50%;
   cursor: pointer;
 }
 
-#menFinal p{
+#menFinal p {
   position: relative;
   top: 26%;
   left: 1%;
@@ -273,12 +271,11 @@ p {
   color: black;
 }
 
-#THANK{
+#THANK {
   font-size: 30px;
 }
-#menFinal svg{
+#menFinal svg {
   position: relative;
   left: 40%;
   top: 20%;
 }
-

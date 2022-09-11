@@ -21,7 +21,7 @@ let input_Cyy = document.querySelector(".inputYY");
 let input_Ccvc = document.querySelector(".inputCVC");
 
 let form = document.getElementById("form");
-
+let menFinal = document.getElementById("menFinal");
 ///////numero de tarjrta
 
 card_number.addEventListener("change", (event) => {
@@ -77,12 +77,10 @@ function validate(cardholder_name) {
     input_name.style.border = "1px solid black";
     error.style.visibility = "hidden";
     formValid.cardholder_name = true;
-    console.table(formValid);
   } else {
     input_name.style.border = "1px solid red";
     error.style.visibility = "visible";
     formValid.cardholder_name = false;
-    console.table(formValid);
   }
 }
 
@@ -98,9 +96,11 @@ function validate_number(cardholder_number) {
   if (exp_reg.test(cardholder_number) == true) {
     input_number.style.border = "1px solid black";
     error_number.style.visibility = "hidden";
+    formValid.cardholder_number = true;
   } else {
     input_number.style.border = "1px solid red";
     error_number.style.visibility = "visible";
+    formValid.cardholder_number = false;
   }
 }
 
@@ -116,9 +116,11 @@ function validate_mm(input_mm) {
   if (exp_reg.test(input_mm) == true) {
     input_Cmm.style.border = "1px solid black";
     error_mm.style.visibility = "hidden";
+    formValid.input_mm = true;
   } else {
     input_Cmm.style.border = "1px solid red";
     error_mm.style.visibility = "visible";
+    formValid.input_mm = false;
   }
 }
 
@@ -134,9 +136,11 @@ function validate_yy(input_yy) {
   if (exp_reg.test(input_yy) == true) {
     input_Cyy.style.border = "1px solid black";
     error_yy.style.visibility = "hidden";
+    formValid.input_yy = true;
   } else {
     input_Cyy.style.border = "1px solid red";
     error_yy.style.visibility = "visible";
+    formValid.input_yy = false;
   }
 }
 //////confirm cvc ////////
@@ -151,8 +155,26 @@ function validate_cvc(input_cvc) {
   if (exp_reg.test(input_cvc) == true) {
     input_Ccvc.style.border = "1px solid black";
     error_cvc.style.visibility = "hidden";
+    formValid.input_cvc = true;
   } else {
     input_Ccvc.style.border = "1px solid red";
     error_cvc.style.visibility = "visible";
+    formValid.input_cvc = false;
   }
 }
+
+button.addEventListener("click", (event) => {
+  event.preventDefault();
+  enviarForm(formValid);
+});
+function enviarForm(formValid) {
+  if (formValid.cardholder_name == true && formValid.cardholder_number == true &&
+    formValid.input_mm == true && formValid.input_yy == true && formValid.input_cvc == true) {
+    form.style.visibility = "hidden";
+    menFinal.style.visibility = "visible";
+  } else {
+    form.style.visibility = "visible";
+    menFinal.style.visibility = "hidden";
+
+  }
+};
