@@ -1,4 +1,4 @@
-@media screen and (min-width: 400px) and (max-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 1023px) {
   body {
     width: auto;
     height: 100vh;
@@ -23,17 +23,17 @@
   /* FRONT CARD */
 
   .front-card {
-    position: fixed;
+    position: inherit;
     width: 320px;
     height: 170px;
-    left: 20px;
-    top: 136px;
+    right: 110px;
+    bottom: 18px;
   }
 
   .front-card svg {
     position: relative;
     left: 20px;
-    bottom: 185px;
+    bottom: 182px;
   }
   .ellipse-svg ellipse {
     transform: scale(0.8);
@@ -49,14 +49,14 @@
     display: flex;
     justify-content: space-around;
     letter-spacing: 3px;
-    top: 220px;
+    top: 235px;
     margin: 0px;
   }
   /* .card_number::placeholder {
-    color: white;
-    letter-spacing: 6px;
-    text-align: center;
-  } */
+      color: white;
+      letter-spacing: 6px;
+      text-align: center;
+    } */
   .card_name {
     color: white;
     position: relative;
@@ -66,9 +66,9 @@
     margin: 0;
   }
   /* .cardholder_name::placeholder {
-    color: white;
-    letter-spacing: 3px;
-  } */
+      color: white;
+      letter-spacing: 3px;
+    } */
 
   #mm-yy::placeholder {
     color: white;
@@ -90,24 +90,24 @@
   /* BACK CARD */
 
   .back-card {
-    position: fixed;
+    position: inherit;
     width: 320px;
     height: 170px;
-    right: 20px;
-    top: 40px;
+    top: 10px;
+    left: 100px;
   }
 
   .cvc {
-    position: fixed;
+    position: inherit;
     width: 42px;
     font-size: small;
-    right: 45px;
-    top: 103px;
+    left: 255px;
+    top: 105px;
   }
   .label-date-cvc {
     margin-top: 8px;
     font-size: 10px;
     padding: 1px;
-    margin-left: 200px;
+    margin-left: 220px;
   }
 }

@@ -1,73 +1,130 @@
-
-
- /* @media screen and (min-width:900px) and (max-width:1300px) {
-  #img_fondo {
-    position: fixed;
-    width: 34%;
-    height: 100%;
-  }
-  .datos {
-    position: absolute;
-    right: 20%;
-    top: 18rem;
-    height: 25rem;
-    width: 16.6rem;
+@media screen and (max-width: 400px) {
+  body {
+    width: auto;
+    height: 100vh;
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
-  
-  .front-card {
-    position: absolute;
-    top: 12rem;
-    right: 59%;
-  }
-  
-  .back-card {
-    position: absolute;
-    top: 31rem;
-    right: 53%;
-  }
-}  */
-
-/* @media screen and (min-width: 900px) {
-  
   #img_fondo {
-    position: fixed;
-    width: 34%;
-    height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 240px;
   }
   .datos {
-    position: absolute;
-    left: 62%;
-    top: 17rem;
-    height: 25rem;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
+    position: fixed;
+    top: 300px;
+    height: 50%;
+    width: 70%;
   }
-  
-  
+
+  /* FRONT CARD */
+
   .front-card {
-    position: absolute;
-    top: 12rem;
-    right: 59%;
-    width: 25%;
-    max-width: 447px;
-    min-width: 320px;
+    position: fixed;
+    width: 250px;
+    height: 150px;
+    left: 20px;
+    top: 130px;
   }
-  .front-card img{
-    width: 100%;
+
+  .front-card svg {
+    position: relative;
+    left: 18px;
+    bottom: 165px;
   }
-  
+  .ellipse-svg ellipse {
+    transform: scale(0.6);
+  }
+  .scaled-path {
+    transform: scale(0.6);
+  }
+  .card_number {
+    position: fixed;
+    color: white;
+    font-size: 18px;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    top: 200px;
+    margin: 0px;
+  }
+  .card_name {
+    color: white;
+    position: relative;
+    bottom: 45px;
+    font-size: 10px;
+    left: 26px;
+    margin: 0;
+  }
+
+  #mm-yy::placeholder {
+    color: white;
+  }
+  .mm-yy {
+    position: relative;
+    display: flex;
+    width: 150px;
+    letter-spacing: 2px;
+    bottom: 57px;
+    margin: 0;
+    left: 185px;
+  }
+  .mm-yy p {
+    color: white;
+    margin: 0;
+    font-size: 10px;
+  }
+  /* BACK CARD */
+
   .back-card {
-    position: absolute;
-    top: 31rem;
-    right: 55%;
-    width: 25%;
-    max-width: 447px;
-    min-width: 320px;
+    position: fixed;
+    width: 250px;
+    height: 150px;
+    right: 20px;
+    top: 40px;
   }
-  .back-card img{
-    width: 100%;
+
+  .cvc {
+    position: fixed;
+    width: 42px;
+    font-size: small;
+    right: 45px;
+    top: 94px;
   }
-} */
+  .label-date-cvc {
+    margin-top: 8px;
+    font-size: 10px;
+    padding: 1px;
+    margin-left: 15px;
+  }
+  .inputMM {
+    width: 20%;
+    border: solid 0.1px;
+    border-radius: 8px;
+    cursor: pointer;
+    border-color: rgb(177, 177, 177);
+  }
+  .inputYY {
+    width: 20%;
+    border: solid 0.1px;
+    border-radius: 8px;
+    cursor: pointer;
+    border-color: rgb(177, 177, 177);
+  }
+  .inputCVC {
+    width: 80%;
+    border: solid 0.1px;
+    border-radius: 6px;
+    cursor: pointer;
+    border-color: rgb(177, 177, 177);
+  }
+  .article-error {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    bottom: 13px;
+  }
+}
