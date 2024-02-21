@@ -1,21 +1,11 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
-  width: 1440px;
   font-size: 18px;
-  font-family: Space Grotesk;
-  background-repeat: no-repeat;
-  background-image: url(images/bg-main-desktop.png);
+  margin: 0px;
+  max-width: 1444px;
 }
 
 .datos {
   position: relative;
-  left: 65%;
-  top: 270px;
   height: 400px;
   width: 250px;
   display: flex;
@@ -26,7 +16,7 @@ body {
 }
 .datos input {
   text-indent: 3%;
-  margin-bottom: 18px;
+  margin-bottom: 18p;
 }
 #error {
   position: relative;
@@ -75,7 +65,7 @@ body {
 .article-input {
   display: flex;
   gap: 7px;
-  margin-right: 15px;
+  height: 12%;
 }
 
 .article-input input {
@@ -95,148 +85,81 @@ body {
   font-size: 10px;
   padding: 1px;
 }
-
 .input {
   width: 95%;
-  height: 8%;
+  height: 12%;
   border: solid 0.1px;
   border-radius: 6px;
   cursor: pointer;
 }
 .input_name {
-  width: 96%;
-  height: 8%;
-  border: solid 0.1px;
-  border-radius: 6px;
+  width: 98.5%;
+  height: 12%;
+  border: solid 1px;
+  border-radius: 8px;
+  border-color: rgb(177, 177, 177);
   cursor: pointer;
 }
 .input_number {
-  width: 96%;
-  height: 8%;
-  border: solid 0.1px;
-  border-radius: 6px;
+  width: 98.5%;
+  height: 12%;
+  border: solid 1px;
+  border-radius: 8px;
+  border-color: rgb(177, 177, 177);
   cursor: pointer;
 }
 .inputMM {
   width: 95%;
-  height: 8%;
   border: solid 0.1px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
+  border-color: rgb(177, 177, 177);
 }
 .inputYY {
   width: 95%;
-  height: 8%;
   border: solid 0.1px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
+  border-color: rgb(177, 177, 177);
 }
 .inputCVC {
-  width: 95%;
-  height: 8%;
   border: solid 0.1px;
   border-radius: 6px;
   cursor: pointer;
-}
-
-.mm-yy {
-  position: absolute;
-  left: 58%;
-  bottom: 10%;
-  display: flex;
-}
-#mm-yy::placeholder {
-  color: white;
-}
-.mm-yy {
-  color: white;
-  border: none;
-  background: none;
-  width: 16px;
-  text-align: center;
-  letter-spacing: 1px;
-  bottom: 108px;
-  left: 500px;
+  border-color: rgb(177, 177, 177);
+  border-color: rgb(177, 177, 177);
 }
 
 form {
   position: relative;
-  width: 400px;
-  height: 600px;
-  margin-left: 40%;
+  width: 100%;
+  height: 100%;
   visibility: visible;
 }
 
 button {
   font-size: 18px;
-  width: 97%;
-  height: 10%;
+  width: 100%;
+  height: 15%;
   background-image: url(images/bg-main-desktop.png);
   color: white;
   border-radius: 6px;
+  border: 0px;
   text-align: center;
-  margin-top: 15px;
   cursor: pointer;
   letter-spacing: 1px;
 }
-
-.front-card {
-  position: absolute;
-  bottom: 51%;
+#buttonF {
+  height: 50px;
 }
 .front-card img {
-  margin-left: 140px;
-}
-.front-card svg {
-  position: relative;
-  left: 30%;
-  bottom: 235px;
-}
-.card_number {
-  font-size: 23px;
-  top: 125px;
-  position: absolute;
-  right: 96px;
-  border: none;
-  /* color: white; */
-  background: none;
-  width: 45%;
-}
-.card_number::placeholder {
-  color: white;
-  letter-spacing: 6px;
-  text-align: center;
-}
-.card_name {
-  color: white;
-  position: relative;
-  bottom: 55px;
-  border: none;
-  left: 180px;
-  background: none;
-}
-.cardholder_name::placeholder {
-  color: white;
-  letter-spacing: 3px;
+  width: 100%;
+  height: 100%;
 }
 
-.back-card {
-  position: absolute;
-  top: 51%;
-}
 .back-card img {
-  margin-left: 240px;
-}
-.cvc {
-  position: relative;
-  bottom: 140px;
-  left: 590px;
-  border: none;
-  background: none;
-}
-.cvc::placeholder {
-  color: white;
-  letter-spacing: 3px;
+  width: 100%;
+  height: 100%;
 }
 
 p {
@@ -245,17 +168,17 @@ p {
 
 #menFinal {
   position: absolute;
-  width: 150%;
-  height: 125%;
-  left: 1%;
-  bottom: 1%;
   visibility: hidden;
+  width: 90%;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #menFinal button {
   position: relative;
-  margin: 10px;
-  margin-top: 50%;
+  margin-top: 10%;
   cursor: pointer;
 }
 
@@ -268,14 +191,19 @@ p {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 5%;
-  color: black;
+  color: rgb(44, 10, 77);
 }
-
+#We {
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
 #THANK {
   font-size: 30px;
+  font-weight: bold;
+  margin: 0;
 }
 #menFinal svg {
   position: relative;
-  left: 40%;
   top: 20%;
 }
