@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQ.css" />
+    <link rel="stylesheet" href="mediaQ2.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,8 +16,9 @@
     />
     <title>credit card</title>
   </head>
+
   <body>
-    <!-- <img id="img_fondo" src="images/bg-main-desktop.png" /> -->
+    <img id="img_fondo" src="images/bg-main-desktop.png" />
     <section class="datos">
       <form id="form">
         <label class="label" for="cardholder_name">CARDHOLDER NAME</label><br />
@@ -40,8 +44,8 @@
         <p id="error_number">wrong format number only</p>
 
         <article class="label-exp-date-cvc">
-          <label class="label-date" for="exp. date">EXP. DATE (MM/YY)</label>
-          <label class="label-date-cvc" for="cvc"> CVC</label><br />
+          <label class="label-date" for="exp. date">EXP. DATE (MM/YY) </label>
+          <label class="label-date-cvc" for="cvc">CVC</label><br />
         </article>
 
         <article class="article-input">
@@ -112,6 +116,11 @@
       </article>
     </section>
 
+    <section class="back-card">
+      <p class="cvc">000</p>
+      <img src="images/bg-card-back.png" />
+    </section>
+
     <section class="front-card">
       <img src="images/bg-card-front.png" />
 
@@ -124,6 +133,8 @@
         <p class="yy">00</p>
       </article>
       <svg
+        class="ellipse-svg"
+        class="path-svg"
         width="84"
         height="47"
         fill="none"
@@ -131,15 +142,11 @@
       >
         <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" />
         <path
+          class="scaled-path"
           d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
           stroke="#fff"
         />
       </svg>
-    </section>
-    <section class="back-card">
-      <img src="images/bg-card-back.png" />
-
-      <p class="cvc">000</p>
     </section>
 
     <script src="card.js"></script>

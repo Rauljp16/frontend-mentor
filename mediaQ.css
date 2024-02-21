@@ -1,0 +1,73 @@
+
+
+ /* @media screen and (min-width:900px) and (max-width:1300px) {
+  #img_fondo {
+    position: fixed;
+    width: 34%;
+    height: 100%;
+  }
+  .datos {
+    position: absolute;
+    right: 20%;
+    top: 18rem;
+    height: 25rem;
+    width: 16.6rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .front-card {
+    position: absolute;
+    top: 12rem;
+    right: 59%;
+  }
+  
+  .back-card {
+    position: absolute;
+    top: 31rem;
+    right: 53%;
+  }
+}  */
+
+/* @media screen and (min-width: 900px) {
+  
+  #img_fondo {
+    position: fixed;
+    width: 34%;
+    height: 100%;
+  }
+  .datos {
+    position: absolute;
+    left: 62%;
+    top: 17rem;
+    height: 25rem;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .front-card {
+    position: absolute;
+    top: 12rem;
+    right: 59%;
+    width: 25%;
+    max-width: 447px;
+    min-width: 320px;
+  }
+  .front-card img{
+    width: 100%;
+  }
+  
+  .back-card {
+    position: absolute;
+    top: 31rem;
+    right: 55%;
+    width: 25%;
+    max-width: 447px;
+    min-width: 320px;
+  }
+  .back-card img{
+    width: 100%;
+  }
+} */
