@@ -29,29 +29,35 @@ card_number.addEventListener("input", (event) => {
 });
 
 // Nombre de tarjeta
+
 cardholder_name.addEventListener("input", (event) => {
   let inputText = event.target.value;
   document.querySelector(".card_name").innerHTML = inputText.toUpperCase();
 });
 
 // Fecha de caducidad mm
+
 input_mm.addEventListener("input", (event) => {
   let inputText = event.target.value;
   document.querySelector(".mm").innerHTML = inputText;
 });
 
 // Fecha de caducidad yy
+
 input_yy.addEventListener("input", (event) => {
   let inputText = event.target.value;
   document.querySelector(".yy").innerHTML = inputText;
 });
 
 // Código CVC
+
 input_cvc.addEventListener("input", (event) => {
   let inputText = event.target.value;
   document.querySelector(".cvc").innerHTML = inputText;
 });
+
 // confirmar formulario ///
+
 const formValid = {
   cardholder_number: false,
   cardholder_name: false,
@@ -59,6 +65,7 @@ const formValid = {
   input_yy: false,
   input_cvc: false,
 };
+
 // confirm name///
 
 button.addEventListener("click", (event) => {
