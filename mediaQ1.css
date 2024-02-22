@@ -1,0 +1,78 @@
+@media screen and (max-width: 400px) {
+  .datos {
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .front-card {
+    width: 250px;
+    height: 150px;
+    left: 20px;
+    top: 130px;
+  }
+
+  .front-card svg {
+    bottom: 165px;
+  }
+
+  .ellipse-svg ellipse {
+    transform: scale(0.6);
+  }
+
+  .scaled-path {
+    transform: scale(0.6);
+  }
+
+  .card_number {
+    font-size: 18px;
+    width: 250px;
+    letter-spacing: 2px;
+    top: 200px;
+  }
+
+  .card_name {
+    font-size: 10px;
+    left: 26px;
+    margin: 0;
+  }
+
+  .mm-yy {
+    letter-spacing: 2px;
+    left: 185px;
+  }
+
+  .mm-yy p {
+    font-size: 10px;
+  }
+
+  .back-card {
+    width: 250px;
+    height: 150px;
+  }
+
+  .cvc {
+    top: 94px;
+  }
+
+  .label-date-cvc {
+    margin-left: 50px;
+  }
+
+  .inputMM {
+    width: 20%;
+  }
+
+  .inputYY {
+    width: 20%;
+  }
+
+  .inputCVC {
+    width: 80%;
+  }
+
+  .article-error {
+    gap: 10px;
+  }
+}

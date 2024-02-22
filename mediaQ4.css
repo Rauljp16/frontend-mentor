@@ -1,112 +1,45 @@
 @media screen and (min-width: 1024px) {
-  body {
-    width: auto;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   #img_fondo {
-    position: absolute;
     left: 0;
     height: 100%;
     width: 33%;
   }
+
   .datos {
-    position: fixed;
+    height: 330px;
     top: 180px;
     width: 450px;
-    height: 330px;
     left: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  /* FRONT CARD */
-
   .front-card {
-    position: fixed;
-    width: 320px;
-    height: 170px;
     left: 120px;
     top: 180px;
   }
 
-  .front-card svg {
-    position: relative;
-    left: 20px;
-    bottom: 185px;
-  }
-  .ellipse-svg ellipse {
-    transform: scale(0.8);
-  }
-  .scaled-path {
-    transform: scale(0.8);
-  }
   .card_number {
-    position: fixed;
-    color: white;
-    font-size: 23px;
-    width: 320px;
-    display: flex;
-    justify-content: space-around;
-    letter-spacing: 3px;
     top: 260px;
     margin: 0px;
   }
-  .card_name {
-    color: white;
-    position: relative;
-    bottom: 45px;
-    font-size: 11px;
-    left: 30px;
-    margin: 0;
-  }
-
-  #mm-yy::placeholder {
-    color: white;
-  }
-  .mm-yy {
-    position: relative;
-    display: flex;
-    width: 150px;
-    letter-spacing: 3px;
-    bottom: 57px;
-    margin: 0;
-    left: 250px;
-  }
-  .mm-yy p {
-    color: white;
-    margin: 0;
-    font-size: 11px;
-  }
-  /* BACK CARD */
 
   .back-card {
-    position: fixed;
-    width: 320px;
-    height: 170px;
     left: 200px;
     top: 380px;
   }
 
   .cvc {
-    position: fixed;
-    width: 42px;
-    font-size: small;
     left: 445px;
     top: 443px;
   }
-  .label-date-cvc {
-    margin-top: 8px;
-    font-size: 10px;
-    padding: 1px;
-    margin-left: 200px;
-  }
+
   form {
-    position: relative;
     width: 80%;
-    height: 100%;
-    visibility: visible;
-    max-width: 480px;
+  }
+
+  .label-date-cvc {
+    margin-left: 100px;
   }
 }

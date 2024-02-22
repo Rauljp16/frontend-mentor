@@ -1,22 +1,36 @@
 body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 18px;
   margin: 0px;
   max-width: 1444px;
+  height: 100vh;
+}
+
+#img_fondo {
+  position: absolute;
+  width: 100%;
+  height: 240px;
 }
 
 .datos {
-  position: relative;
-  height: 400px;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: space-around;
+  position: fixed;
+  height: 50%;
+  width: 90%;
 }
+
 .datos input {
   text-indent: 3%;
   margin-bottom: 18p;
+}
+.cvc {
+  position: fixed;
+  width: 42px;
+  font-size: small;
+  right: 45px;
+  top: 103px;
 }
 #error {
   position: relative;
@@ -35,16 +49,19 @@ body {
   color: red;
   visibility: hidden;
 }
+
 #error_mm {
   color: red;
   font-size: 10px;
   visibility: hidden;
 }
+
 #error_yy {
   color: red;
   font-size: 10px;
   visibility: hidden;
 }
+
 #error_cvc {
   color: red;
   font-size: 10px;
@@ -56,12 +73,13 @@ body {
   font-size: 10px;
   padding: 1px;
 }
+
 .label-date-cvc {
   margin-top: 8px;
   font-size: 10px;
   padding: 1px;
-  margin-left: 175px;
 }
+
 .article-input {
   display: flex;
   gap: 7px;
@@ -73,6 +91,7 @@ body {
   text-align: center;
   padding: 5px;
 }
+
 .article-error {
   position: relative;
   display: flex;
@@ -85,6 +104,15 @@ body {
   font-size: 10px;
   padding: 1px;
 }
+
+/* voy
+datad
+data
+datad
+datad
+datad
+d */
+
 .input {
   width: 95%;
   height: 12%;
@@ -92,6 +120,7 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
+
 .input_name {
   width: 98.5%;
   height: 12%;
@@ -100,6 +129,7 @@ body {
   border-color: rgb(177, 177, 177);
   cursor: pointer;
 }
+
 .input_number {
   width: 98.5%;
   height: 12%;
@@ -108,6 +138,7 @@ body {
   border-color: rgb(177, 177, 177);
   cursor: pointer;
 }
+
 .inputMM {
   width: 95%;
   border: solid 0.1px;
@@ -115,6 +146,7 @@ body {
   cursor: pointer;
   border-color: rgb(177, 177, 177);
 }
+
 .inputYY {
   width: 95%;
   border: solid 0.1px;
@@ -122,6 +154,7 @@ body {
   cursor: pointer;
   border-color: rgb(177, 177, 177);
 }
+
 .inputCVC {
   border: solid 0.1px;
   border-radius: 6px;
@@ -149,14 +182,38 @@ button {
   cursor: pointer;
   letter-spacing: 2px;
 }
-#buttonF {
-  height: 50px;
+
+.front-card {
+  position: fixed;
+  width: 320px;
+  height: 170px;
 }
+
 .front-card img {
   width: 100%;
   height: 100%;
 }
 
+.front-card svg {
+  position: relative;
+  left: 20px;
+  bottom: 185px;
+}
+
+.ellipse-svg ellipse {
+  transform: scale(0.8);
+}
+
+.scaled-path {
+  transform: scale(0.8);
+}
+.back-card {
+  position: fixed;
+  width: 320px;
+  height: 170px;
+  right: 20px;
+  top: 40px;
+}
 .back-card img {
   width: 100%;
   height: 100%;
@@ -166,6 +223,42 @@ p {
   color: white;
 }
 
+.card_number {
+  position: fixed;
+  color: white;
+  font-size: 23px;
+  width: 320px;
+  display: flex;
+  justify-content: space-around;
+  letter-spacing: 3px;
+  margin: 0px;
+}
+
+.card_name {
+  color: white;
+  position: relative;
+  bottom: 45px;
+  font-size: 11px;
+  left: 30px;
+  margin: 0;
+}
+.mm-yy {
+  position: relative;
+  display: flex;
+  width: 150px;
+  letter-spacing: 3px;
+  bottom: 57px;
+  margin: 0;
+  left: 250px;
+}
+.mm-yy p {
+  color: white;
+  margin: 0;
+  font-size: 11px;
+}
+#mm-yy::placeholder {
+  color: white;
+}
 #menFinal {
   position: absolute;
   visibility: hidden;
@@ -178,10 +271,14 @@ p {
 
 #menFinal button {
   position: relative;
-  margin-top: 10%;
+  margin-top: 5%;
   cursor: pointer;
 }
-
+#buttonF {
+  height: 50px;
+  width: 90%;
+  max-width: 480px;
+}
 #menFinal p {
   position: relative;
   top: 26%;
@@ -193,16 +290,19 @@ p {
   margin-top: 5%;
   color: rgb(44, 10, 77);
 }
+
 #We {
   width: 100%;
   font-size: 20px;
   margin-bottom: 40px;
 }
+
 #THANK {
   font-size: 30px;
   font-weight: bold;
   margin: 0;
 }
+
 #menFinal svg {
   position: relative;
   top: 20%;

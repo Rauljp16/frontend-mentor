@@ -1,113 +1,38 @@
 @media screen and (min-width: 600px) and (max-width: 1023px) {
-  body {
-    width: auto;
-    height: 100vh;
-    position: relative;
+  #img_fondo {
+    height: 265px;
+  }
+
+  .datos {
+    top: 340px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #img_fondo {
-    position: absolute;
-    width: 100%;
-    height: 265px;
-  }
-  .datos {
-    position: fixed;
-    top: 340px;
-    width: 90%;
-    /* bottom: 10px; */
-    height: 50%;
-  }
-
-  /* FRONT CARD */
 
   .front-card {
     position: inherit;
-    width: 320px;
-    height: 170px;
     right: 110px;
     bottom: 18px;
   }
 
-  .front-card svg {
-    position: relative;
-    left: 20px;
-    bottom: 182px;
-  }
-  .ellipse-svg ellipse {
-    transform: scale(0.8);
-  }
-  .scaled-path {
-    transform: scale(0.8);
-  }
   .card_number {
-    position: fixed;
-    color: white;
-    font-size: 23px;
-    width: 320px;
-    display: flex;
-    justify-content: space-around;
-    letter-spacing: 3px;
     top: 235px;
-    margin: 0px;
   }
-  /* .card_number::placeholder {
-      color: white;
-      letter-spacing: 6px;
-      text-align: center;
-    } */
-  .card_name {
-    color: white;
-    position: relative;
-    bottom: 45px;
-    font-size: 11px;
-    left: 30px;
-    margin: 0;
-  }
-  /* .cardholder_name::placeholder {
-      color: white;
-      letter-spacing: 3px;
-    } */
-
-  #mm-yy::placeholder {
-    color: white;
-  }
-  .mm-yy {
-    position: relative;
-    display: flex;
-    width: 150px;
-    letter-spacing: 3px;
-    bottom: 57px;
-    margin: 0;
-    left: 250px;
-  }
-  .mm-yy p {
-    color: white;
-    margin: 0;
-    font-size: 11px;
-  }
-  /* BACK CARD */
 
   .back-card {
     position: inherit;
-    width: 320px;
-    height: 170px;
     top: 10px;
     left: 100px;
   }
 
   .cvc {
     position: inherit;
-    width: 42px;
-    font-size: small;
     left: 255px;
     top: 105px;
   }
+
   .label-date-cvc {
-    margin-top: 8px;
-    font-size: 10px;
-    padding: 1px;
     margin-left: 220px;
   }
 }
